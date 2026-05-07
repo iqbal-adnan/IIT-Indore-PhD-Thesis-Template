@@ -1,0 +1,352 @@
+\documentclass[a4paper, a4paper,12pt]{book}
+\usepackage{latexsym,acronym}
+\usepackage{afterpage}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{newlfont}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage{pdfpages}
+
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+\pagestyle{fancy}
+\usepackage{tikz}
+\usepackage{subfigure}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{bm,latexsym,float,epsfig,subfigure,epstopdf,graphicx,array,algorithm,algpseudocode,makecell,mathtools}
+\usepackage{caption}
+\usepackage{seqsplit}
+\usepackage{adjustbox}
+\usepackage{lipsum}
+%\usepackage[backend=biber]{biblatex}
+\usepackage{nomencl}
+\makenomenclature
+
+
+
+\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}}%
+\newcommand*{\Resize}[2]{\resizebox{#1}{!}{$#2$}}%
+\DeclareMathAlphabet\mathbfcal{OMS}{cmsy}{m}{n}
+\newtheorem{theorem}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{rem}{Remark}
+\newtheorem{proof}{Proof}
+\newtheorem{definition}{Definition}
+\usepackage{gensymb}
+\usepackage{amsmath}
+
+
+
+\usepackage[acronym]{glossaries}
+\setacronymstyle{long-short}
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\makenoidxglossaries
+
+%\usepackage{subfiles}
+\usepackage{epstopdf}
+
+% \chapter*{}
+\input{glossary}
+
+
+
+\usepackage{afterpage}
+\renewcommand{\bibname}{References}
+\rhead{}
+\usepackage{titlesec}
+\usepackage{url}
+
+\usepackage[top=1in, bottom=1in, outer=2.0cm, inner=4.0cm,headsep=1.0cm,footskip=1.0cm]{geometry}
+\tikzstyle{block}     = [draw, fill=blue!20, rectangle,
+    minimum height=2.5em, minimum width=2.5em]
+\tikzstyle{sum}       = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input}     = [coordinate]
+\tikzstyle{output}    = [coordinate]
+\tikzstyle{pinstyle}  = [pin edge={to-,thin,black}]
+\tikzstyle{block}     = [draw, fill=blue!20, rectangle,
+    minimum height=2.5em, minimum width=2.5em]
+\tikzstyle{sum}       = [draw, fill=blue!20, circle, node distance=1cm]
+\tikzstyle{input}     = [coordinate]
+\tikzstyle{output}    = [coordinate]
+\tikzstyle{pinstyle}  = [pin edge={to-,thin,black}]
+\usetikzlibrary{positioning,shapes,arrows}
+
+%\bibliographystyle{model5-names}
+\bibliographystyle{IEEEtran}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+
+\Large \textbf{THESIS TITLE}\\
+\vspace{2cm}
+ \textbf{{Ph.D. Thesis}}\\
+  \vspace{3cm}
+\textit{by}\\
+
+\vspace{0.7cm}
+\textbf{STUDENT NAME - ADNAN IQBAL}\\
+
+\vspace{3cm}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.27\textwidth]{iiti_logo.png}
+	\label{fig:IITI}
+\end{figure}
+
+\vspace{2cm}
+
+ \large \textbf{DEPARTMENT OF ELECTRICAL ENGINEERING}\\ % \small
+%\vspace{0.1cm}
+\Large \textbf{INDIAN INSTITUTE OF TECHNOLOGY INDORE}\\
+%\vspace{0.1cm}
+ \small \textbf{JANUARY, 2025}\\
+
+
+\end{center}
+\end{titlepage}
+%%%%%empty page%%%
+\newpage
+\mbox{}
+\thispagestyle{empty}
+%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+
+\Large \textbf{THESIS TITLE}\\
+\vspace{1.5cm}
+ \textbf{\Large{A THESIS}}
+
+ \vspace{0.5cm}
+\textit{{Submitted in partial fulfillment of the}}\\
+\vspace{0.05cm}
+\textit{{requirements for the award of the degree}}\\
+\vspace{0.1cm}
+\textit{{\textit{of}}}\\
+\vspace{0.3cm}
+\Large \textbf{DOCTOR OF PHILOSOPHY}\\
+\vspace{2cm}
+\textit{by}\\
+
+\vspace{0.5cm}
+\textbf{STUDENT NAME - ADNAN IQBAL}\\
+
+\vspace{2cm}
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.27\textwidth]{iiti_logo.png}
+	\label{fig:IITI2}
+\end{figure}
+
+\vspace{1cm}
+
+ \large \textbf{DEPARTMENT OF ELECTRICAL ENGINEERING}\\
+%\vspace{0.1cm}
+ \Large \textbf{INDIAN INSTITUTE OF TECHNOLOGY INDORE}\\
+%\vspace{0.1cm}
+ \small \textbf{JANUARY, 2025}\\
+\end{center}
+\end{titlepage}
+
+
+\newpage 
+\thispagestyle{empty} 
+
+
+\chapter*{}
+%\input{Chapters/CandidatesDeclaration.tex}
+
+% Insert
+\includepdf[pages=1]{PhDCertificateforSignature.pdf}
+
+
+
+\newpage 
+\thispagestyle{empty}
+
+
+\chapter*{}
+\input{Chapters/Acknowledgement.tex}
+
+\newpage 
+\thispagestyle{empty} 
+
+\chapter*{}
+\input{Chapters/DedicatedTo.tex}
+
+\newpage 
+\thispagestyle{empty} 
+
+\pagenumbering{roman}
+\chapter*{}
+
+\input{Chapters/Abstract.tex}
+\newpage 
+\thispagestyle{empty} 
+
+\input{Chapters/ListofPublications.tex}
+\newpage 
+\thispagestyle{empty} 
+
+
+\tableofcontents
+
+\newpage\addcontentsline{toc}{chapter}{LIST OF FIGURES}\listoffigures
+% \newpage \mbox{} \thispagestyle{empty}                 	  
+\newpage\addcontentsline{toc}{chapter}{LIST OF TABLES}\listoftables
+% \newpage \mbox{} \thispagestyle{empty}                  
+\newpage
+\addcontentsline{toc}{chapter}{LIST OF ABBREVIATIONS/ACRONYMS}
+
+
+\glsaddall
+
+\printnoidxglossary[type=\acronymtype,title={List of Abbreviations/Acronyms}, nonumberlist]
+
+
+\newpage
+
+
+\begin{spacing}{1.5}
+	
+% CHAPTER 1 STARTS
+% ################################################
+% ################################################
+\pagenumbering{arabic}
+
+ \newpage 
+ \mbox{} 
+ \thispagestyle{empty} 
+ \clearpage
+ \pagenumbering{arabic}
+ \thispagestyle{empty}
+ \include{Chapters/Chap1/Chapter1}
+
+% ################################################
+% ################################################
+% CHAPTER 1 ENDS
+
+
+% CHAPTER 2 STARTS
+% ################################################
+% ################################################
+
+ \mbox{} 
+ \thispagestyle{empty} 
+ \clearpage
+ \thispagestyle{empty}
+ \include{Chapters/Chap2/Chapter2}
+
+% ################################################
+% ################################################
+% CHAPTER 2 ENDS
+
+
+% CHAPTER 3 STARTS
+% ################################################
+% ################################################
+
+\mbox{} 
+\thispagestyle{empty} 
+\clearpage
+\thispagestyle{empty}
+\include{Chapters/Chap3/Chapter3}
+
+% ################################################
+% ################################################
+% CHAPTER 3 ENDS
+
+
+% CHAPTER 4 STARTS
+% ################################################
+% ################################################
+
+\mbox{} 
+\thispagestyle{empty} 
+\clearpage
+\thispagestyle{empty}
+\include{Chapters/Chap4/Chapter4}
+
+% ################################################
+% ################################################
+% CHAPTER 4 ENDS
+
+
+% CHAPTER 5 STARTS
+% ################################################
+% ################################################
+
+\mbox{} 
+\thispagestyle{empty} 
+\clearpage
+\thispagestyle{empty}
+\include{Chapters/Chap5/Chapter5}
+
+% ################################################
+% ################################################
+% CHAPTER 5 ENDS
+
+
+% CHAPTER 6 STARTS
+% ################################################
+% ################################################
+
+
+\mbox{} 
+\thispagestyle{empty} 
+\clearpage
+\thispagestyle{empty}
+\include{Chapters/Chap6/Chapter6}
+
+% ################################################
+% ################################################
+% CHAPTER 6 ENDS
+
+
+% CHAPTER 7 STARTS
+% ################################################
+% ################################################
+
+\newpage 
+\mbox{} 
+\thispagestyle{empty} 
+\clearpage
+\thispagestyle{empty}
+\include{Chapters/Chap7/Chapter7}
+
+% ################################################
+% ################################################
+% CHAPTER 7 ENDS
+ 
+\thispagestyle{empty}
+
+
+% References
+%\include{ref}
+
+%\bibliography{Chapters/Chap1/RefTransientStability}
+
+\bibliography{reference}
+
+
+
+\appendix
+\chapter{Appendix A Name}
+\input{Chapters/appendixConvexHull.tex}
+
+\chapter{Appendix B Name}
+\input{Chapters/AppendixScreenshot.tex}
+	
+\end{spacing}
+
+
+\end{document}
